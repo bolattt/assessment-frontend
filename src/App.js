@@ -1,7 +1,14 @@
-import "./App.css";
+import useFetch from "./hooks/useFetch";
+import "./App.scss";
 
 function App() {
-  return <div className="App">app</div>;
+  const { data, loading, error } = useFetch("/items");
+
+  return (
+    <div className="App">
+      <h1>Our Menu</h1>
+    </div>
+  );
 }
 
 export default App;
