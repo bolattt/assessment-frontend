@@ -6,8 +6,8 @@ function ItemCard({ item }) {
       <h2>{name}</h2>
       <p>{shortDescription}</p>
       <img src={image} alt={name} />
-      <p>${price}</p>
-      <p>{toppings}</p>
+      <p>Price: ${price}</p>
+      <p>{toppings.length ? "Toppings: " + toppings.join(", ") : ""}</p>
     </div>
   );
 }

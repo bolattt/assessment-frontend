@@ -1,2 +1,27 @@
+body {
+  background: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  //   border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .App {
+  //   border: 5px dotted red;
+  //   height: 100vh;
+
+  & h1 {
+    margin: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    height: 95vh;
+    width: 100vw;
+  }
 }
